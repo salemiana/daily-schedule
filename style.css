@@ -23,11 +23,14 @@ textarea{
 
 .description{
   white-space: pre-wrap;
+  color: #0fac0f;
+  background-color: #9fdae7;
 }
 
 .time-block{
   text-align: center;
   border-radius: 15px;
+  color:lavender;
 }
 
 .row {
@@ -40,11 +43,13 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  background-color: lavender;
 }
 
 .past {
   background-color: #d3d3d3;
   color: white;
+  background-color: #e7e69f;
 }
 
 .present {
