@@ -2,7 +2,14 @@
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
+console.log({...localStorage})
+
+
 $(document).ready(function () {
+
+    var storageArray = {...localStorage}
+    
+ console.log(storageArray)
     // saveBtn click listener 
     $(".saveBtn").on("click", function (event) {
         // Get nearby values of the description in JQuery
@@ -18,9 +25,15 @@ console.log(time);
         //get current number of hours.
         var timeNow = moment().hour();
 
+        console.log($('.row'))
         // loop over time blocks
-        $("container").each(function () {
-            var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+        $(".row").each(function (element, j) {
+            console.log(j)
+            console.log(storageArray[element])
+
+            this.setAttribute("id", element)
+
+            var blockTime = (parseInt($(this).attr("id"))+9);
 
             // To check the time and add the classes for background indicators
             for (var i = 0; i < 9; i++){
@@ -44,8 +57,6 @@ console.log(time);
           }
         })
     }
+    timeTracker()
 
 })
-
-
- 
