@@ -2,14 +2,10 @@
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
-console.log({...localStorage})
+localStorage
 
 
 $(document).ready(function () {
-
-    var storageArray = {...localStorage}
-    
- console.log(storageArray)
     // saveBtn click listener 
     $(".saveBtn").on("click", function (event) {
         // Get nearby values of the description in JQuery
@@ -29,7 +25,6 @@ console.log(time);
         // loop over time blocks
         $(".row").each(function (element, j) {
             console.log(j)
-            console.log(storageArray[element])
 
             this.setAttribute("id", element)
 
@@ -60,3 +55,7 @@ console.log(time);
     timeTracker()
 
 })
+
+
+ 
+
