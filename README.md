@@ -25,3 +25,4 @@
 *WHEN I refresh the page
 
 *THEN the saved events persist
+![workday-schedule-img](https://user-images.githubusercontent.com/101297588/165870493-1d4a6216-d9f7-480a-9015-e91e5d982e43.png)
